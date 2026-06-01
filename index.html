@@ -1,24 +1,28 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog Tech</title>
 
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
         header {
             background-color: #183C63;
-            color: #3015db;
+            color: #FFFFFF;
             text-align: center;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 16px;
         }
 
         main {
-            background-color: #27f5d9;
+            background-color: #FFFFFF;
             color: #183C63;
             text-align: center;
             max-width: 800px;
@@ -26,9 +30,22 @@
             padding: 16px;
         }
 
-        img {
-            width: 80px;
-            height: 80px;
+        /* cores tipo marca-texto */
+        h2 {
+            background-color: #fff176; /* amarelo marca-texto */
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        strong {
+            background-color: #a5d6a7; /* verde marca-texto */
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -41,10 +58,6 @@
     </header>
 
     <main>
-        <img
-            src="imagem-blog.png"
-            alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-
         <h2>Meu primeiro post</h2>
 
         <p><strong>Por: Andrey Czerevaty</strong></p>
@@ -56,6 +69,4 @@
     </main>
 
 </body>
-
 </html>
-```
