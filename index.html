@@ -10,7 +10,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #a80000;
 }
 
 header {
@@ -24,7 +24,7 @@ main {
     display: flex;
     max-width: 800px;
     margin: 20px auto;
-    background-color: white;
+    background-color: rgb(192, 7, 7);
     padding: 20px;
     gap: 15px;
 }
@@ -36,6 +36,13 @@ main {
 img {
     width: 80px;
     height: 80px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
 }
 </style>
 
@@ -54,12 +61,23 @@ img {
 ```
 <div>
     <h2>Meu primeiro post</h2>
-    <p class="artigo-autor">Por: Marcelo Paludetto</p>
+    <p class="artigo-autor">Por: Andrey Czerevaty</p>
     <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+
+    <button>❤️ <span>0</span></button>
 </div>
 ```
 
 </main>
+
+<script>
+const botao = document.querySelector("button");
+
+botao.addEventListener("click", function () {
+    let contador = botao.querySelector("span");
+    contador.textContent++;
+});
+</script>
 
 </body>
 </html>
